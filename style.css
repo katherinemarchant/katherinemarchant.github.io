@@ -1,26 +1,6 @@
 /* Academic Website Styles - Asymmetrical Design */
 
 :root {
-    /* --nameText: #ff6016;
-    --accent: #ff9915;
-    --accentAlt: #ff7d41;
-    --light: #445c46;
-    --mid: #28382d;
-    --dark: #2a3129;
-    --text: #ffffff; */
-    --nameText: #b3b3b3;
-    --accent: #02e2d6;
-    --accentAlt: #029c94;
-    --light: #015551;
-    --mid: #013936;
-    --dark: #001d1b;
-    --text: #ffffff;
-
-    --text-shadow-small: 1px 1px 4px rgba(0, 0, 0, 0.75);
-    --text-shadow-big:   2px 2px 4px rgba(0, 0, 0, 0.75);
-}
-
-body.light-mode {
     --nameText: #001d1b;
     --accent: #013936;
     --accentAlt: #015551;
@@ -28,9 +8,22 @@ body.light-mode {
     --mid: #e0e0e0;
     --dark: #c0c0c0;
     --text: #000000;
-
+    
     --text-shadow-small: none;
     --text-shadow-big: none;
+}
+
+body.dark-mode {
+    --nameText: #b3b3b3;
+    --accent: #02e2d6;
+    --accentAlt: #029c94;
+    --light: #015551;
+    --mid: #013936;
+    --dark: #001d1b;
+    --text: #ffffff;
+    
+    --text-shadow-small: 1px 1px 4px rgba(0, 0, 0, 0.75);
+    --text-shadow-big:   2px 2px 4px rgba(0, 0, 0, 0.75);
 }
 
 .theme-switch {
