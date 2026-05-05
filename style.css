@@ -1,7 +1,7 @@
 /* Academic Website Styles - Asymmetrical Design */
 
 :root {
-	--nameText: #001d1b;
+	/* --nameText: #001d1b;
 	--accent: #013936;
 	--accentAlt: #015551;
 	--light: #f0f0f0;
@@ -9,21 +9,59 @@
 	--dark: #c0c0c0;
 	--text: #000000;
 	
+	--nameText: #001d1b;
+	--accent: #013936;
+	--accentAlt: #015551;
+	--light: #679c9a81;
+	--mid: #cdcccc;
+	--dark: #c0c0c0;
+	--text: #000000; */
+
+	
+
+	--test: #fefa05;
+	
+	--black: #000000;
+	--grey7: #252525;
+	--grey6: #4C4C4C;
+	--grey5: #636363;
+	--grey4: #7F7E7E;
+	--grey3: #9f9f9f;
+	--grey2: #AEAEAE;
+	--grey1: #dbdbdb;
+	--white: #f0efef;
+	--white: #9dc1c0bd;
+	
+	--teal7: #001d1b;
+	--teal6: #013936;
+	--teal5: #015551;
+	--teal4: #147D78;
+	--teal3: #029C94;
+	--teal2: #10BBB3;
+	--teal1: #02E2D6;
+	
 	--text-shadow-small: none;
 	--text-shadow-big: none;
 }
 
 body.dark-mode {
-	--nameText: #c4c4c4;
+	/* --nameText: #c4c4c4;
 	--accent: #02e2d6;
 	--accentAlt: #029c94;
 	--light: #015551;
 	--mid: #013936;
 	--dark: #001d1b;
 	--text: #ffffff;
+
+	--teal1: #013936;
+	--teal2: #015551;
+	--teal3: #147D78;
+	--teal4: #029C94;
+	--teal5: #10BBB3;
+	--teal6: #02E2D6;
 	
 	--text-shadow-small: 1px 1px 4px rgba(0, 0, 0, 0.75);
-	--text-shadow-big:   2px 2px 4px rgba(0, 0, 0, 0.75);
+	--text-shadow-big:   2px 2px 4px rgba(0, 0, 0, 0.75); */
 }
 
 .theme-switch {
@@ -44,7 +82,7 @@ body.dark-mode {
 	position: absolute;
 	cursor: pointer;
 	inset: 0;
-	background-color: var(--dark);
+	background-color: var(--teal2);
 	border-radius: 999px;
 	transition: background-color 0.3s ease;
 }
@@ -56,13 +94,13 @@ body.dark-mode {
 	width: 22px;
 	left: 3px;
 	top: 3px;
-	background-color: var(--accent);
+	background-color: var(--teal4);
 	border-radius: 50%;
 	transition: transform 0.3s ease;
 }
 
 .theme-switch input:checked + .slider {
-	background-color: var(--light);
+	background-color: var(--teal6);
 }
 
 .theme-switch input:checked + .slider::before {
@@ -79,8 +117,8 @@ h1, h2, h3 {text-shadow: var(--text-shadow-big);}
 body {
 	font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 	line-height: 1.7;
-	color: var(--text);
-	background: var(--mid);
+	color: var(--teal6);
+	background: var(--grey1);
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
@@ -103,25 +141,25 @@ body {
 	top: 2rem;
 	height: fit-content;
 	padding-right: 2rem;
-	border-right: 3px solid var(--accentAlt);
+	border-right: 3px solid var(--teal3);
 }
 
 .sidebar header {
 	text-align: left;
 	margin-bottom: 2rem;
 	padding-bottom: 1rem;
-	border-bottom: 2px solid var(--accentAlt);
+	border-bottom: 2px solid var(--teal2);
 }
 
 .sidebar h1 {
 	font-size: 2rem;
-	color: var(--nameText);
+	color: var(--grey6);
 	margin-bottom: 0.1rem;
 }
 
 .sidebar .affiliation {
 	font-size: 1.25rem;
-	color: var(--accent);
+	color: var(--teal4);
 	line-height: 1.5;
 }
 
@@ -133,7 +171,7 @@ body {
 }
 
 .sidebar nav a {
-	color: var(--accent);
+	color: var(--teal4);
 	text-decoration: none;
 	font-weight: 500;
 	padding: 0.5rem 0;
@@ -144,9 +182,9 @@ body {
 }
 
 .sidebar nav a:hover {
-	color: var(--nameText);
+	color: var(--grey5);
 	padding-left: 1.25rem;
-	border-left-color: var(--nameText);
+	border-left-color: var(--grey5);
 }
 
 /* Main content (right) */
@@ -157,7 +195,7 @@ body {
 section {
 	margin-bottom: 4rem;
 	padding: 2rem;
-	background: var(--light);
+	background: var(--white);
 	border-radius: 8px;
 	box-shadow: 0 2px 20px rgba(0,0,0,0.25);
 	
@@ -197,8 +235,8 @@ section::before {
 	left: -1rem;
 	top: 0;
 	bottom: 0;
-	width: 4px;
-	background: var(--accent);
+	width: 3px;
+	background: var(--teal3);
 	border-radius: 2px;
 	opacity: 0;
 	transition: opacity 0.3s;
@@ -210,22 +248,22 @@ section.visible::before {
 
 section h2 {
 	font-size: 1.6rem;
-	color: var(--text);
+	color: var(--teal7);
 	margin-bottom: 1.5rem;
-	padding-bottom: 0.75rem;
-	border-bottom: 3px solid var(--accent);
+	padding-bottom: 0.5rem;
+	border-bottom: 0.25rem solid var(--teal4);
 	position: relative;
 }
 
-section h2::after {
+/* section h2::after {
 	content: '';
 	position: absolute;
-	bottom: -3px;
+	bottom: -0.25rem;
 	left: 0;
-	width: 80px;
-	height: 3px;
-	background: var(--nameText);
-}
+	width: 4rem;
+	height: 0.25rem;
+	background: var(--accentAlt);
+} */
 
 /* Research interests - asymmetric grid */
 #research ul {
@@ -238,9 +276,9 @@ section h2::after {
 
 #research li {
 	padding: 1rem;
-	background: var(--mid);
+	background: var(--test);
 	border-radius: 6px;
-	border-left: 3px solid var(--accentAlt);
+	border-left: 3px solid var(--test);
 	transition: transform 0.3s;
 }
 
@@ -252,30 +290,30 @@ section h2::after {
 .formatted-list {
 	margin-bottom: 1.5rem;
 	padding: 1rem;
-	border-left: 3px solid var(--accent);
-	background: var(--light);
+	border-left: 3px solid var(--teal4);
+	background: var(--grey1);
 }
 
 .formatted-list .title {
 	font-weight: 600;
-	color: var(--accent);
+	color: var(--teal7);
 	font-size: 1.05rem;
 }
 
 .formatted-list .subtitle {
 	font-weight: 600;
-	color: var(--text);
+	color: var(--teal6);
 	margin: 0.25rem 0;
 }
 
 .formatted-list .description {
-	color: var(--text);
+	color: var(--teal5);
 	margin: 0.5rem 0;
 }
 
 .formatted-list .date {
 	font-style: italic;
-	color: var(--text);
+	color: var(--teal5);
 	font-size: 0.9rem;
 }
 
@@ -319,34 +357,34 @@ section h2::after {
 	top: 0.5rem;
 	width: 10px;
 	height: 10px;
-	background: var(--accent);
+	background: var(--teal7);
 	border-radius: 50%;
 }
 
 #formatted-list-2 strong {
-	color: var(--accent);
+	color: var(--teal7);
 }
 
 #formatted-list-2 i {
-	color: var(--text);
+	color: var(--teal6);
 }
 
 /* Contact */
 #contact {
-	background: var(--accentAlt);
-	color: var(--light);
+	background: var(--teal5);
+	color: var(--teal3);
 }
 
 #contact h2 {
-	font-size: 1.75rem;
-	color: var(--mid);
-	border-bottom-color: var(--light);
+	font-size: 1.6rem;
+	color: var(--teal3);
+	border-bottom-color: var(--teal2);
 	text-shadow: none;
 }
 
-#contact h2::after {
-	background: var(--dark);
-}
+/* #contact h2::after {
+	background: var(--teal5);
+} */
 
 #contact p {
 	font-size: 1.25rem;
@@ -355,7 +393,7 @@ section h2::after {
 }
 
 #contact a {
-	color: var(--dark);
+	color: var(--grey2);
 	text-decoration: none;
 }
 
@@ -366,7 +404,7 @@ section h2::after {
 /* Back Link */
 .back-link {
 	display: inline-block;
-	color: var(--accent);
+	color: var(--teal4);
 	text-decoration: none;
 	font-weight: 500;
 	transition: padding-left 0.3s;
@@ -380,14 +418,14 @@ section h2::after {
 
 /* Headers */
 .main-content h1 {
-	color: var(--nameText);
+	color: var(--teal5);
 	font-size: 1.8rem;
 	margin-bottom: .5rem;
 	position: relative;
 }
 
 .main-content h3 {
-	color: var(--accent);
+	color: var(--teal4);
 	font-size: 1.4rem;
 	margin-bottom: .5rem;
 	position: relative;
@@ -396,22 +434,22 @@ section h2::after {
 /* Paper entries (for papers.html) */
 .paper {
 	margin-bottom: 1.5rem;
-	background: var(--light);
+	background: var(--test);
 }
 
 .paper .authors {
 	font-weight: 600;
-	color: var(--accentAlt);
+	color: var(--test);
 	font-size: 1.2rem;
 }
 
 .authors .main {
-	color: var(--nameText);
+	color: var(--test);
 }
 
 .paper .status {
 	font-weight: 600;
-	color: var(--accent);
+	color: var(--test);
 	font-size: 1rem;
 }
 
@@ -424,7 +462,7 @@ section h2::after {
 	margin-right: 0.75rem;
 	margin-bottom: 0.5rem;
 	padding: 0.5rem 1rem;
-	background: var(--accent);
+	background: var(--test);
 	color: white;
 	text-decoration: none;
 	border-radius: 4px;
@@ -441,9 +479,9 @@ footer {
 	grid-column: 1 / -1;
 	text-align: center;
 	padding: 2rem;
-	color: var(--accentAlt);
+	color: var(--teal7);
 	font-size: 0.85rem;
-	border-top: 1px solid var(--accent);
+	border-top: 1px solid var(--teal6);
 	margin-top: 2rem;
 }
 
@@ -465,13 +503,12 @@ footer {
 		top: 0;
 		padding-right: 0;
 		border-right: none;
-		border-bottom: 3px solid var(--accentAlt);
+		border-bottom: 3px solid var(--teal2);
 		padding-bottom: 1.5rem;
 	}
 	
 	.sidebar nav {
 		flex-direction: row;
-		flex-wrap: wrap;
 		gap: 1rem;
 	}
 	
