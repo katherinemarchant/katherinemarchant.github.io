@@ -172,6 +172,11 @@ section h3 {
 	border-bottom: 1px solid var(--accentAlt);
 }
 
+#two-column-section-left .li1 {
+	margin-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
 #two-column-section-left li strong {
 	color: var(--accent);
 }
@@ -184,7 +189,7 @@ section h3 {
 }
 
 #point-list li {
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.75rem;
 	position: relative;
 }
 

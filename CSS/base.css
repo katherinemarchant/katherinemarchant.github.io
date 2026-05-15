@@ -2,8 +2,8 @@
 
 :root {
 	--nameText:		#10BBB3;
-	--accent:		#02E2D6;
-	--accentAlt:	#00ada5;
+	--accent:		#00eee2;
+	--accentAlt:	#00cac0;
 	--light:		#006964;
 	--midLight:		#005551;
 	--mid:			#004b46;
@@ -19,8 +19,8 @@
 	
 body.light-mode {
 	--nameText:		#015551;
-	--accent:		#147D78;
-	--accentAlt:	#029C94;
+	--accent:		#0e7e78;
+	--accentAlt:	#004e4a;
 	--light:		#c4dbd9;
 	--midLight:		#d8e6e5;
 	--mid:			#f1f5f4;
