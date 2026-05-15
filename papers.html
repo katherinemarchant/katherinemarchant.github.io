@@ -3,30 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Papers | Katherine Marchant</title>
-	<link rel="stylesheet" href="style.css">
+	<title>Home | Katherine Marchant</title>
+
+	<link rel="stylesheet" href="CSS/style.css">
+
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
 		<aside class="sidebar">
-			<header>
-				<h1>Katherine Marchant
-					<label class="theme-switch">
-						<input type="checkbox" id="theme-toggle">
-						<span class="slider"></span>
-					</label>
-				</h1>
-				<p class="affiliation">PhD Student - French Literature<br>University of Toronto</p>
+			<header class="sidebar-header">
+				<div class="header-text">
+					<h1>Katherine Marchant</h1>
+					<p class="affiliation">PhD Student - French Literature<br>University of Toronto</p>
+				</div>
+				<label class="theme-switch">
+					<input type="checkbox" id="theme-toggle">
+					<span class="slider"></span>
+				</label>
 			</header>
 			<nav>
 				<a href="index.html">Home</a>
-				<a href="papers.html">Papers</a>
+				<!-- <a href="papers.html">Papers</a> -->
 			</nav>
 		</aside>
 
 		<main class="main-content">
-			<a href="index.html" class="back-link">← Back to Home</a>
 			<h1 class="page-title">Papers & Publications</h1>
 
 			<!-- <section id="papers">
@@ -75,40 +77,6 @@
 		</footer>
 	</div>
 
-	<script>
-		// Scroll animation and theme toggle
-		(function() {
-			const observer = new IntersectionObserver((entries) => {
-				entries.forEach(entry => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('visible');
-					}
-				});
-			}, { threshold: 0.1 });
-
-			document.querySelectorAll('section').forEach(sec => {
-				observer.observe(sec);
-			});
-
-			const toggle = document.getElementById("theme-toggle");
-
-			const savedTheme = localStorage.getItem("theme");
-
-			if (savedTheme === "light") {
-				document.body.classList.add("dark-mode");
-				toggle.checked = true;
-			}
-
-			toggle.addEventListener("change", () => {
-				if (toggle.checked) {
-					document.body.classList.add("dark-mode");
-					localStorage.setItem("theme", "light");
-				} else {
-					document.body.classList.remove("dark-mode");
-					localStorage.setItem("theme", "dark");
-				}
-			});
-		})();
-	</script>
+	<script src="script.js"></script>
 </body>
 </html>
