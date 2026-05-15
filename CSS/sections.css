@@ -211,7 +211,7 @@ section h3 {
 
 /* Emphsised Section */
 #emphasis-section {
-	background: var(--accentAlt);
+	background: var(--accent);
 	color: var(--midDark);
 }
 
