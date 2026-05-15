@@ -1,23 +1,6 @@
 /* Base styles and theme variables */
 
 :root {
-	--nameText:		#015551;
-	--accent:		#147D78;
-	--accentAlt:	#029C94;
-	--light:		#c4dbd9;
-	--midLight:		#d8e6e5;
-	--mid:			#f1f5f4;
-	--midDark:		#4e4e4e;
-	--dark:			#3b3b3b;
-	--text:			#013936;
-
-	--test:			#ff00ff;
-	
-	--text-shadow-small: none;
-	--text-shadow-big: none;
-}
-
-body.light-mode {
 	--nameText:		#10BBB3;
 	--accent:		#02E2D6;
 	--accentAlt:	#00ada5;
@@ -33,7 +16,24 @@ body.light-mode {
 	--text-shadow-small: 1px 1px 4px rgba(0, 0, 0, 0.75);
 	--text-shadow-big:   2px 2px 4px rgba(0, 0, 0, 0.75);
 }
+	
+body.light-mode {
+	--nameText:		#015551;
+	--accent:		#147D78;
+	--accentAlt:	#029C94;
+	--light:		#c4dbd9;
+	--midLight:		#d8e6e5;
+	--mid:			#f1f5f4;
+	--midDark:		#4e4e4e;
+	--dark:			#3b3b3b;
+	--text:			#013936;
 
+	--test:			#ff00ff;
+	
+	--text-shadow-small: none;
+	--text-shadow-big: none;
+}
+		
 
 /* Toggle Switch */
 .theme-switch {
