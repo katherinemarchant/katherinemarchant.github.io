@@ -63,23 +63,6 @@ nav a.active {
 	color: var(--nameText);
 }
 
-.back-link {
-	color: var(--accent);
-	text-decoration: none;
-	font-weight: bold;
-	padding: 0.5rem;
-	transition: color 0.3s, padding-left 0.3s;
-	border-left: 3px solid transparent;
-	padding-left: 1rem;
-	margin-left: -1rem;
-}
-
-.back-link:hover {
-	color: var(--nameText);
-	padding-left: 1.25rem;
-	border-left-color: var(--nameText);
-}
-
 footer {
 	grid-column: 1 / -1;
 	text-align: center;
