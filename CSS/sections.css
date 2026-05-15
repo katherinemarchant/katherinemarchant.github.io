@@ -210,9 +210,12 @@ section h3::after {
 	font-size: 1.15rem;
 	margin: 0.5rem 0;
 	text-shadow: none;
+	color: var(--dark);
 }
 
 #emphasis-section a {
+	font-size: 1.15rem;
+	margin: 0.5rem 0;
 	color: var(--dark);
 	text-decoration: none;
 }
