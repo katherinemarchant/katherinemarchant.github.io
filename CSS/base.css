@@ -1,6 +1,22 @@
 /* Base styles and theme variables */
-
 :root {
+	--nameText:		#015551;
+	--accent:		#0e7e78;
+	--accentAlt:	#004e4a;
+	--light:		#c4dbd9;
+	--midLight:		#d8e6e5;
+	--mid:			#f1f5f4;
+	--midDark:		#3d3d3d;
+	--dark:			#2b2b2b;
+	--text:			#013936;
+	
+	--test:			#ff00ff;
+	
+	--text-shadow-small: none;
+	--text-shadow-big: none;
+}
+
+body.dark-mode {
 	--nameText:		#10BBB3;
 	--accent:		#00eee2;
 	--accentAlt:	#00cac0;
@@ -16,24 +32,6 @@
 	--text-shadow-small: 1px 1px 4px rgba(0, 0, 0, 0.75);
 	--text-shadow-big:   2px 2px 4px rgba(0, 0, 0, 0.75);
 }
-	
-body.light-mode {
-	--nameText:		#015551;
-	--accent:		#0e7e78;
-	--accentAlt:	#004e4a;
-	--light:		#c4dbd9;
-	--midLight:		#d8e6e5;
-	--mid:			#f1f5f4;
-	--midDark:		#3d3d3d;
-	--dark:			#2b2b2b;
-	--text:			#013936;
-
-	--test:			#ff00ff;
-	
-	--text-shadow-small: none;
-	--text-shadow-big: none;
-}
-		
 
 /* Toggle Switch */
 .theme-switch {
@@ -56,7 +54,7 @@ body.light-mode {
 	position: absolute;
 	cursor: pointer;
 	inset: 0;
-	background-color: var(--dark);
+	background-color: var(--midDark);
 	border-radius: 20px;
 	transition: background-color 0.3s ease;
 }
