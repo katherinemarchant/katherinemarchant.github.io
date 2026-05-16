@@ -9,6 +9,10 @@
 	padding: 2rem;
 }
 
+.main-content a{
+	color: var(--text);
+}
+
 .sidebar {
 	position: sticky;
 	top: 2rem;

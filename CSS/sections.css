@@ -1,5 +1,4 @@
 /* Section cards and page content styles */
-
 section {
 	margin-bottom: 3rem;
 	padding: 2rem;
@@ -64,7 +63,7 @@ section h3 {
 }
 
 .sub-box-section .sub-title {
-	font-weight: bold;
+	/* font-weight: bold; */
 	color: var(--accent);
 	font-size: 1.15rem;
 }
@@ -85,26 +84,31 @@ section h3 {
 }
 
 
-/* Text Section */
-#text-section .authors {
-	font-weight: bold;
-	color: var(--accentAlt);
-	font-size: 1.2rem;
+/* Image */
+/* .circle-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: 1rem;
+	object-position: center 30%;
+	float: left;
+	shape-outside: circle(50%); 
+	margin-right: 20px; 
+} */
+.circle-container {
+	width: 200px;
+	height: 200px;
+	padding: 15px; 
+	float: left;
 }
 
-#text-section .authors .main {
-	color: var(--nameText);
-}
-
-#text-section .status {
-	font-weight: bold;
-	font-style: italic;
-	color: var(--accent);
-	font-size: 1rem;
-}
-
-#text-section .text {
-	color: var(--text);
+.circle-container img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center 25%;
 }
 
 
